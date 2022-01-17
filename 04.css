@@ -1,0 +1,132 @@
+/* /////////////////線上訂位////////////// */
+.online{
+    background-color: #6661;
+    justify-content: center;
+    margin:auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    max-width: 1200px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.online>img{
+    width: 100%;
+}
+.inputbox{
+    background-color: #FFFED9;
+    width: 100%;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px #aaa9;
+    margin: auto;
+    margin-top: 40px;
+}
+.inputbox h3{
+    font-size: 30px;
+    color: #000d;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.inputbox input{
+    border-radius: 5px;
+    border: none;
+    padding: 10px 10px;
+    width: 70%;
+    text-align: center;
+    margin: 10px 0px;
+    background-color: #ddd9;
+}
+.inputbox select{
+    border-radius: 3px;
+    border: none;
+    width: 76%;
+    height: 40px;
+    text-align: center;
+    margin: 10px 0px;
+}
+.inputbox button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.inputbox button img{
+    height: 90px;
+    transform:rotate(-5deg);
+    margin-bottom: 10px;
+}
+.datetime{
+    width: 100%;
+}
+@media screen and (min-width:1200px) {
+    .online{
+        background-color: #6661;
+        justify-content: center;
+        margin:auto;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        border-radius: 100px;
+        max-width: 1200px;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    .online>img{
+        width: 50%;
+    }
+    .inputbox{
+        background-color: #FFFED9;
+        width: 50%;
+        border-radius: 100px;
+        box-shadow: 2px 2px 2px #aaa9;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .inputbox h3{
+        font-size: 30px;
+        color: #000d;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .inputbox input{
+        border-radius: 3px;
+        border: none;
+        padding: 10px 10px;
+        width: 70%;
+        height: 20px;
+        text-align: center;
+        margin: 10px 0px;
+        background-color: #ddd9;
+    }
+    .inputbox select{
+        border-radius: 3px;
+        border: none;
+        width: 76%;
+        height: 40px;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .inputbox button{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        background: none;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+    .inputbox button img{
+        width: 100%;
+        height: 90px;
+        transform:rotate(-5deg);
+        margin-bottom: 10px;
+    }
+    .inputbox button img:hover{
+        transform: scale(1.2);
+        opacity: 70%;
+    }
+}

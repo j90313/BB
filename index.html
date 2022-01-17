@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01.css">
+    <link rel="stylesheet" href="header.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- /////////主標題+LOGO////////// -->
+    <div class="headerbg">
+        <input type="checkbox" name="" id="menu-control">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logoname.png" alt=""></a>
+            </div>
+            <label for="menu-control" class="menubtn">
+                <span>選單</span>
+            </label>
+            <ul class="navline">
+                <li>
+                    <a href="05.html">
+                        <img src="img/menu.png" alt="">
+                    </a></li>
+                <li>
+                    <a href="06.html">
+                        <img src="img/News.png" alt="">
+                    </a></li>
+                <li>
+                    <a href="04.html">
+                        <img src="img/Reserve.png" alt="">
+                    </a></li>
+                <li>
+                    <a href="02.html">
+                        <img src="img/Maptext.png" alt="">
+                    </a></li>
+                <li>
+                    <a href="03.html">
+                        <img src="img/About.png" alt="">
+                    </a></li>
+                <li>
+                    <a href="07.html">
+                        <img src="img/QA.png" alt="">
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /////////輪播////////// -->
+    <div class="showimg">
+        <img class="imgbar" src="img/burbar.jpg">
+        <img class="imgbar" src="img/burbar1.jpg">
+        <img class="imgbar" src="img/burger20.jpg">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("imgbar");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    <!-- ///////////本周主打///////////// -->
+    <div class="hotmenu">
+        <div class="hot-Title">
+            <h1><img src="img/hot.png" alt=""></h1>
+        </div>
+
+        <a href="05.html">
+        <div class="hotcard" data-aos="fade-left" >
+            <div class="hotimg">
+                <img src="img/burger6.jpg" alt="">
+            </div>
+            <div class="money"><p>$189</p></div>
+
+            <div class="hottxt">
+                <h2>經典肉排漢堡套餐</h2>
+                <p>原汁原味經典肉排漢堡套餐、主要成分：麵包皮、豬肉、高麗菜、沙拉醬、番茄、番茄醬、馬鈴薯。</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="05.html">
+        <div class="hotcard" data-aos="fade-right">
+            <div class="hotimg-sec">
+                <img src="img/burger10.jpg" alt="">
+            </div>
+            <div class="money-sec"><p>$289</p></div>
+
+            <div class="hottxt-sec">
+                <h2>多重辣味和牛套餐</h2>
+                <p>主要成分：麵包皮、牛肉排、高麗菜、辣椒醬、番茄、番茄醬、馬鈴薯。</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="05.html">
+        <div class="hotcard" data-aos="fade-left">
+            <div class="hotimg">
+                <img src="img/burger3.jpg" alt="">
+            </div>
+            <div class="money"><p>$189</p></div>
+
+
+            <div class="hottxt">
+                <h2>蜜汁羊排</h2>
+                <p>主要成分：厚羊排、酸黃瓜醬、高麗菜、花生醬、番茄、番茄醬、起士、馬鈴薯。</p>
+            </div>
+        </div>
+        </a>
+        <div class="more">
+            <a href="05.html"><img src="img/more.png" alt=""></a>
+        </div>
+        
+    </div>
+    <!-- ///////////最新消息///////////// -->
+    <div class="activity" data-aos="fade-down">
+        <h1><img src="img/new.png" alt=""></h1>
+
+        <div class="actall"> 
+            <div class="card" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
+                <div class="actbdr">
+                    <img src="img/cooffe.jpg" alt="">
+                </div>
+                <div class="acttxt">
+                <h2>精選哥倫比亞咖啡豆</h2>
+                <p>新品哥倫比亞咖啡現磨現泡現喝，口味獨特...
+                線上通路全面試賣中！
+                </p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
+                <div class="actbdr">
+                    <img src="img/5b.jpg" alt="">
+                </div>
+                <div class="acttxt">
+                    <h2>振興方案</h2>
+                    <p>即日起使用振興五倍券，即刻享有超值小禮物乙份，客戶使用振興券還可以找零錢。<br>
+                    (優惠至4月30日止，全店適用)</p>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
+                <div class="actbdr">
+                    <img src="img/octt.jpg" alt="">
+                </div>
+                <div class="acttxt">
+                <h2>十月天前來演唱!!</h2>
+                <p>歡慶聖誕節，12/25當日特別邀請實力樂團『十月天』來餐廳獻唱，當日唱歌歌曲為 "偷渡客"、"大太陽"、"想不到了＂、"繼續掰"、"不行了啦"，誠摯邀請大家一同來現場享用美食。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more">
+        <a href="06.html"><img src="img/more.png" alt=""></a>
+    </div>
+
+    <!-- ///////////關於BB///////////// -->
+    <div class="abtitle" data-aos="fade-down">
+        <img src="img/about1.png" alt="">
+    </div>
+
+        <div class="about" data-aos="fade-up">
+            <div class="abimg">
+                <div class="imgcircle">
+                    <a href="03.html">
+                        <img src="img/dough.jpg" alt="about">
+                    </a>
+                </div>
+            </div>
+
+            <div class="abtxt">
+                <h2>「新鮮」、「天然」、「美味」</h2>
+                <p>一味無二的餐點堅持美味、新鮮、健康，不添加人工調味料，連果汁也堅持新鮮現榨</p>
+            </div>
+        </div>
+    <div class="more">
+        <a href="03.html"><img src="img/more.png" alt=""></a>
+    </div>
+    <!-- /////////底部說明////////// -->
+    <div class="footer">
+            <div class="footmenu">
+                <p>本網站為緯育TibaMe前端設計工程師班第73期學員專題作品，本平台僅供學習、展示之用</p>
+                <div class="footimg">
+                    <a href="">
+                        <img src="img/fb.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/ig.png" alt="">
+                    </a>
+                </div>
+            </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

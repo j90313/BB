@@ -1,0 +1,99 @@
+/* /////////////餐點介紹////////// */
+.all-Menu{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 70px;
+}
+.menu{
+    margin: auto;
+    box-sizing: border-box;
+}
+.menutitle{
+    padding: 20px 0px;
+    color: #999;
+    font-size: 21px;
+    text-align: center;
+}
+.menutitle img{
+    width: 90%;
+    justify-content: center;
+    vertical-align: middle;
+}
+.burger{
+    width: 100%;
+}
+.burger img{
+    width: 90%;
+    border-radius: 10%;
+    padding: 10px 10px;
+}
+.txt{
+    line-height: 1.5em;
+    justify-content: center;
+    width: 80%;
+    padding: 0px 10px;
+}
+.txt h2{
+    font-size: 30px;
+    margin-bottom : 10px 
+}
+.money{
+    right: 30px;
+    margin: 10px 0;
+    font-size: 24px;
+    color: #f52a24;
+}
+@media screen and (min-width:1200px) {
+    .all-Menu{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .menu{
+        display: flex;
+        margin: auto;
+    }
+    .menutitle{
+        padding: 20px 0px;
+        color: #999;
+        font-size: 21px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .menutitle img{
+        width: 50%;
+        justify-content: center;
+    }
+    .burger{
+        width: 100%;
+        margin: 5px;
+        box-sizing: border-box;
+        transition: .3s;
+    }
+    .burger:hover{
+        transform: translateY(-20px)
+    }
+    .burger img{
+        width: 90%;
+        height: 50%;
+        border-radius: 10%;
+    }
+    .txt{
+        width: 90%;
+        height: 45%;
+        line-height: 1.5em;
+        margin-top: 20px;
+        margin: auto;
+        padding: 0px;
+    }
+    .txt h2{
+        font-size: 30px;
+    }
+    .money{
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px 0;
+        font-size: 24px;
+        color: #f52a24;
+    }
+    
+}

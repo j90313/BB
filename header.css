@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* <!-- ////////////////////RWD導覽列//////////////////// --> */
+#menu-control{
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+}
+.menubtn{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position:absolute;
+    top: 5px;
+    right: 10px;
+}
+.menubtn span{
+    opacity: 0;
+}
+.menubtn::before{
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 4px;
+    left: 2px;
+    background-color: #ff9f27;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 10px 0px #ff9f27,
+                0px -10px 0px #ff9f27;
+}
+.header{
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    background-color: #eae7dc;
+    z-index: 10;
+    top: 0;
+}
+.headerbg{
+    width: 100%;
+    background-color: #eae7dc;
+}
+.logo{
+    width: 200px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.header img:hover{
+    opacity: 70%;
+}
+.navline{
+    width: 80%;
+    height: 100vh;
+    margin-top: 10px;
+    position: absolute;
+    top:72px;
+    left: -100%;
+    transition: .4s;
+    z-index: 1;
+    background-color: #eae7dc;
+}
+.navline li{
+    position: relative;
+    top: 10%;
+    border-bottom: 2px solid #666;
+}
+#menu-control:checked ~ .header ul{
+    left: 0;
+}
+.navline li{
+    text-align: center;
+    padding: 20px 0;
+}
+/* <!-- ///////////////RWD底部////////////////////// --> */
+.footer{
+    width:100%;
+    background-color: #0cbcf2;
+    /* position: fixed;
+    bottom: 0; */
+}
+.footmenu{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+}
+.footmenu p{
+    text-align: center;
+}
+.footimg{
+    max-width: 1200px;
+    margin-top: 10px;
+    text-align: center;
+}
+.footimg a{
+    text-decoration: none;
+}
+.footimg img{
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+}
+/* //////////////桌機導覽列///////////////// */
+@media screen and (min-width : 1200px){
+.menubtn{
+    display: none;
+}
+.headerbg{
+    width: 100%;
+    background-color: #eae7dc;
+}
+.header{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+.header img{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    /* margin-top: 10px; */
+    vertical-align: top;
+}
+.header img:hover{
+    opacity: 70%;
+}
+.navline{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    justify-content: space-around;
+    transition: none;
+}
+.navline img{
+    width: 70%;
+    vertical-align:top;
+}
+.navline li{
+    border:none;
+}
+.navline img:hover{
+    opacity: 50%;
+}
+/* <!-- ///////////////底部////////////////////// --> */
+.footer{
+    width:100%;
+    height: auto;
+    background-color: #0cbcf2;
+    padding: 5px 0;
+}
+.footmenu{
+    max-width: 1200px;
+    margin: auto;
+}
+.footmenu p{
+    text-align: center;
+}
+.footimg{
+    max-width: 1200px;
+    margin-top: 10px;
+    text-align: center;
+}
+.footimg a{
+    text-decoration: none;
+}
+.footimg img{
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+}
+}

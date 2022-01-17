@@ -1,0 +1,130 @@
+/* //////////////活動說明////////////// */
+.activity{
+    max-width: 1200px;
+    margin: auto;
+}
+.activity h1{
+    margin: 0 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.activity h1 img{
+    width: 70%;
+}
+.actall{
+    width: 100%;
+    background-color: #7771;
+    justify-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.card{
+    padding: 50px 0px;
+}
+.acttxt{
+    width: 50%;
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: center;
+    line-height: 1.5em;
+    padding: 10px 10px;
+}
+.acttxt h2{
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff9f27;
+    text-align: center;
+    margin:30px 0;
+}
+.acttxt p{
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 20px;
+    color: #888d;
+    text-align: center;
+}
+.actbdr img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+.actbdr{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 70% 70% 46% 46%;
+    box-shadow: 15px 15px 0px 0px #aaa6;
+}
+
+@media screen and (min-width:1200px) {
+    .activity h1{
+        margin: 0 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .activity h1 img{
+        width: 50%;
+    }
+    .actall{
+        width: 100%;
+        background-color:#fff;
+        justify-items: center;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+    .card{
+        display: flex;
+        padding: 50px 0px;
+        background-color: #fff;
+        border: 2px solid #6662;
+        margin: 20px 0px;
+        box-shadow: 5px 5px 0px 0px #6662;     
+    }
+    .acttxt{
+        width: 50%;
+        box-sizing: border-box;
+        margin: auto;
+        justify-content: center;
+        border-radius: 50px;
+        padding: 10px 10px;
+        position: relative;
+    }
+    .actbdr::after{
+        content: '';
+        height: 300px;
+        border-left: 2px dashed #f52a24;
+        position: absolute;
+        margin-left:4%;
+    }
+    .acttxt h2{
+        font-size: 36px;
+        font-weight: 800;
+        color: #ff9f27;
+        text-align: center;
+        margin:30px 0;
+    }
+    .acttxt p{
+        line-height: 1.5em;
+        font-weight: 300;
+        font-size: 24px;
+        color: #444;
+        text-align: center;
+    }
+    .actbdr img{
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+    .actbdr{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 70% 70% 46% 46%;
+        box-shadow: 15px 15px 0px 0px #aaa6;
+    }
+   
+}
